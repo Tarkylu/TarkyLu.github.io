@@ -35,7 +35,28 @@
     .subtitle {
       color: #555;
       font-size: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 35px;
+      flex-wrap: wrap;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
     }
 
     .project,
@@ -73,35 +94,29 @@
 
 <body>
 
- <div class="hero">
-  <img src="profile.jpg" alt="Xuantong Lu" class="profile-photo">
+  <div class="hero">
 
-  <div>
-    <h1>Xuantong Lu</h1>
+    <img src="profile.jpg" alt="Xuantong Lu" class="profile-photo">
 
-    <div class="subtitle">
-      Applied Physics Undergraduate · Numerical Simulation · Microelectronics · Data Analysis
+    <div class="hero-text">
+
+      <h1>Xuantong Lu</h1>
+
+      <div class="subtitle">
+        Applied Physics Undergraduate · Numerical Simulation · Microelectronics · Data Analysis
+      </div>
+
+      <p>
+        I am an undergraduate student in Applied Physics at
+        Nanjing University of Posts and Telecommunications.
+        My academic interests include numerical simulation,
+        semiconductor materials and devices, microelectronics,
+        data analysis, and AI for Science.
+      </p>
+
     </div>
 
-    <p>
-      I am an undergraduate student in Applied Physics at
-      Nanjing University of Posts and Telecommunications.
-      My academic interests include numerical simulation,
-      semiconductor materials and devices, microelectronics,
-      data analysis, and AI for Science.
-    </p>
   </div>
-</div>
-
-  <h2>About Me</h2>
-
-  <p>
-    I am an undergraduate student in Applied Physics at
-    Nanjing University of Posts and Telecommunications.
-    My academic interests include numerical simulation,
-    semiconductor materials and devices, microelectronics,
-    data analysis, and AI for Science.
-  </p>
 
 
   <h2>Education</h2>
@@ -119,9 +134,14 @@
   </ul>
 
   <p>
-    Relevant coursework: Quantum Mechanics, Solid State Physics,
-    Computational Physics, Linear Algebra, Mathematical Experiments,
-    Optoelectronic Technology, and Microwave Technology and Antennas.
+    Relevant coursework:
+    Quantum Mechanics,
+    Solid State Physics,
+    Computational Physics,
+    Linear Algebra,
+    Mathematical Experiments,
+    Optoelectronic Technology,
+    and Microwave Technology and Antennas.
   </p>
 
 
@@ -171,9 +191,8 @@
     </ul>
 
     <p>
-      <a
-        href="https://github.com/TarkyLu/2d-heat-conduction-fdm"
-        target="_blank">
+      <a href="https://github.com/TarkyLu/2d-heat-conduction-fdm"
+         target="_blank">
         View Project on GitHub →
       </a>
     </p>
@@ -286,8 +305,10 @@
 
     <li>
       <strong>Numerical & Data:</strong>
-      Numerical Simulation, Parameter Scanning,
-      Data Analysis, Data Visualization
+      Numerical Simulation,
+      Parameter Scanning,
+      Data Analysis,
+      Data Visualization
     </li>
 
     <li>
