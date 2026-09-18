@@ -15,10 +15,11 @@
       padding: 40px 24px;
       line-height: 1.7;
       color: #222;
+      background: #fff;
     }
 
     h1 {
-      margin-bottom: 5px;
+      margin: 0 0 6px 0;
       font-size: 42px;
     }
 
@@ -32,31 +33,32 @@
       margin-bottom: 5px;
     }
 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
     .subtitle {
       color: #555;
       font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 35px;
-      flex-wrap: wrap;
+      margin-bottom: 18px;
     }
 
     .profile-photo {
-      width: 180px;
-      height: auto;
-      border-radius: 12px;
+      width: 150px;
+      height: 200px;
       object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 280px;
+      object-position: center top;
+      border-radius: 4px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     }
 
     .project,
@@ -89,16 +91,25 @@
       color: #666;
       font-size: 14px;
     }
+
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column-reverse;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 173px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
+  <div class="header">
 
-    <img src="profile.jpg" alt="Xuantong Lu" class="profile-photo">
-
-    <div class="hero-text">
+    <div class="header-text">
 
       <h1>Xuantong Lu</h1>
 
@@ -115,6 +126,8 @@
       </p>
 
     </div>
+
+    <img src="profile.jpg" alt="Xuantong Lu" class="profile-photo">
 
   </div>
 
